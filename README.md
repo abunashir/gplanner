@@ -25,7 +25,13 @@ bundle install
 ### Start planning
 
 ```sh
-bin/planner plan --type day --editor
+bin/planner plan day --editor
+```
+
+### Build commit message
+
+```sh
+bin/planner commit day
 ```
 
 ## License
