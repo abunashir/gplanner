@@ -22,7 +22,11 @@ bundle install
  
 ## Usage
 
-TODO: Write usage instructions here
+### Start planning
+
+```sh
+bin/planner plan --type day --editor
+```
 
 ## License
 
