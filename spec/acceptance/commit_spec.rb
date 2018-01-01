@@ -4,7 +4,7 @@ RSpec.describe "Commit message" do
   describe "commit" do
     it "builds commit messages for the type" do
       command = %w(commit day)
-      allow(DateTime).to receive(:now).and_return(DateTime.new(2017, 12, 24))
+      allow(DateTime).to receive(:now).and_return(DateTime.new(2017, 12, 25))
 
       output = capture_stdout { Gplanner.run(command) }
 

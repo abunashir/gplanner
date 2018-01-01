@@ -16,7 +16,7 @@ RSpec.describe Gplanner::Planner do
 
     context "week as an argument" do
       it "returns week planning attributes" do
-        stub_current_date_to(DateTime.new(2017, 12, 24))
+        stub_current_date_to(DateTime.new(2017, 12, 25))
 
         meta = Gplanner::Planner.meta_for("week")
 
@@ -28,7 +28,7 @@ RSpec.describe Gplanner::Planner do
 
     context "month as an argument" do
       it "returns month planning attributes" do
-        stub_current_date_to(DateTime.new(2017, 12, 24))
+        stub_current_date_to(DateTime.new(2017, 12, 25))
 
         meta = Gplanner::Planner.meta_for("month")
 

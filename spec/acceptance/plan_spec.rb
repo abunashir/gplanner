@@ -4,7 +4,7 @@ RSpec.describe "Planning" do
   describe "plan" do
     it "creates a blank slate for planning" do
       allow(Gplanner).to receive(:command_line)
-      allow(DateTime).to receive(:now).and_return(DateTime.new(2017, 12, 24))
+      allow(DateTime).to receive(:now).and_return(DateTime.new(2017, 12, 25))
 
       command = %w(plan day --editor)
       Gplanner.run(command)

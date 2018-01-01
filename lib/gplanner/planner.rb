@@ -3,7 +3,7 @@ require "ostruct"
 
 module Gplanner
   class Planner
-    def initialize(type:, day_in_advance: 1)
+    def initialize(type:, day_in_advance: 0)
       @type = type
       @day_in_advance = day_in_advance
     end
