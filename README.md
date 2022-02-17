@@ -1,10 +1,6 @@
-# Planner
+# Goal / Git Planner
 
-[![Build
-Status](https://travis-ci.org/abunashir/gplanner.svg?branch=master)](https://travis-ci.org/abunashir/gplanner)
-
-Goal / Git Planner
-
+[![Github CI](https://github.com/abunashir/gplanner/actions/workflows/test.yml/badge.svg)](https://github.com/abunashir/gplanner/actions/workflows/test.yml)
 
 ## Installation
 
