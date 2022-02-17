@@ -21,7 +21,12 @@ module Gplanner
     attr_reader :type, :day_in_advance
 
     def type_metadata
-      { day: day_attributes, week: week_attributes, month: month_attributes }
+      {
+        note: note_attributes,
+        day: day_attributes,
+        week: week_attributes,
+        month: month_attributes,
+      }
     end
 
     def datetime
@@ -57,6 +62,14 @@ module Gplanner
         branch: format_date("%Y%m%d-%B"),
         filename: build_filename("monthly", "%Y%m%d-%B"),
         message: "Add monthly plans for #{format_date('%B, %Y')}",
+      }
+    end
+
+    def note_attributes
+      {
+        branch: format_date("%Y%m%d-%A"),
+        filename: build_filename("notes", "%Y%m%d-%A"),
+        message: "Add notes for #{format_date('%B %d, %Y')}",
       }
     end
   end
